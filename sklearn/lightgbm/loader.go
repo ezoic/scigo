@@ -11,12 +11,26 @@ import (
 	"strings"
 )
 
-// LoadFromFile loads a LightGBM model from a text file
-func LoadFromFile(filePath string) (*Model, error) {
-	return LoadFromFileWithBufferSize(filePath, bufio.MaxScanTokenSize)
+// LoadOptions defines options for loading a LightGBM model
+type LoadOptions struct {
+	BufferSize *int
 }
 
-func LoadFromFileWithBufferSize(filePath string, bufferSize int) (*Model, error) {
+// LoadOption defines a function type for setting LoadOptions
+type LoadOption func(*LoadOptions)
+
+// WithBufferSize sets the buffer size for loading the model
+func WithBufferSize(size int) LoadOption {
+	return func(opts *LoadOptions) {
+		if opts.BufferSize == nil {
+			opts.BufferSize = new(int)
+		}
+		*opts.BufferSize = size
+	}
+}
+
+// LoadFromFile loads a LightGBM model from a text file
+func LoadFromFile(filePath string, opts ...LoadOption) (*Model, error) {
 	// Clean the file path to prevent path traversal attacks
 	cleanPath := filepath.Clean(filePath)
 	file, err := os.Open(cleanPath)
@@ -25,26 +39,28 @@ func LoadFromFileWithBufferSize(filePath string, bufferSize int) (*Model, error)
 	}
 	defer func() { _ = file.Close() }()
 
-	return LoadFromReaderWithBufferSize(file, bufferSize)
+	return LoadFromReader(file, opts...)
 }
 
 // LoadFromString loads a LightGBM model from string format
-func LoadFromString(modelStr string) (*Model, error) {
+func LoadFromString(modelStr string, opts ...LoadOption) (*Model, error) {
 	reader := strings.NewReader(modelStr)
-	return LoadFromReader(reader)
+	return LoadFromReader(reader, opts...)
 }
 
 // LoadFromReader loads a LightGBM model from an io.Reader
-func LoadFromReader(reader io.Reader) (*Model, error) {
-	return LoadFromReaderWithBufferSize(reader, bufio.MaxScanTokenSize)
-}
+func LoadFromReader(reader io.Reader, opts ...LoadOption) (*Model, error) {
+	options := &LoadOptions{
+		BufferSize: nil,
+	}
+	for _, opt := range opts {
+		opt(options)
+	}
 
-// LoadFromReaderWithBufferSize loads a LightGBM model from an io.Reader with specified buffer size
-func LoadFromReaderWithBufferSize(reader io.Reader, bufferSize int) (*Model, error) {
 	scanner := bufio.NewScanner(reader)
-	if bufferSize > 0 && bufferSize != bufio.MaxScanTokenSize {
-		buf := make([]byte, bufferSize)
-		scanner.Buffer(buf, bufferSize)
+	if options.BufferSize != nil {
+		buf := make([]byte, *options.BufferSize)
+		scanner.Buffer(buf, *options.BufferSize)
 	}
 	model := NewModel()
 
