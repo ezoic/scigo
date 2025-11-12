@@ -13,6 +13,10 @@ import (
 
 // LoadFromFile loads a LightGBM model from a text file
 func LoadFromFile(filePath string) (*Model, error) {
+	return LoadFromFileWithBufferSize(filePath, bufio.MaxScanTokenSize)
+}
+
+func LoadFromFileWithBufferSize(filePath string, bufferSize int) (*Model, error) {
 	// Clean the file path to prevent path traversal attacks
 	cleanPath := filepath.Clean(filePath)
 	file, err := os.Open(cleanPath)
@@ -21,7 +25,7 @@ func LoadFromFile(filePath string) (*Model, error) {
 	}
 	defer func() { _ = file.Close() }()
 
-	return LoadFromReader(file)
+	return LoadFromReaderWithBufferSize(file, bufferSize)
 }
 
 // LoadFromString loads a LightGBM model from string format
@@ -32,7 +36,16 @@ func LoadFromString(modelStr string) (*Model, error) {
 
 // LoadFromReader loads a LightGBM model from an io.Reader
 func LoadFromReader(reader io.Reader) (*Model, error) {
+	return LoadFromReaderWithBufferSize(reader, bufio.MaxScanTokenSize)
+}
+
+// LoadFromReaderWithBufferSize loads a LightGBM model from an io.Reader with specified buffer size
+func LoadFromReaderWithBufferSize(reader io.Reader, bufferSize int) (*Model, error) {
 	scanner := bufio.NewScanner(reader)
+	if bufferSize > 0 && bufferSize != bufio.MaxScanTokenSize {
+		buf := make([]byte, bufferSize)
+		scanner.Buffer(buf, bufferSize)
+	}
 	model := NewModel()
 
 	var currentTree *Tree
