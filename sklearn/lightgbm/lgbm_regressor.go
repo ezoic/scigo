@@ -455,13 +455,9 @@ func (lgb *LGBMRegressor) Score(X, y mat.Matrix) (float64, error) {
 	return metrics.R2Score(yVec, predVec)
 }
 
-func (lgb *LGBMRegressor) LoadModel(filepath string) error {
-	return lgb.LoadModelWithBufferSize(filepath, 0)
-}
-
 // LoadModel loads a pre-trained LightGBM model from file
-func (lgb *LGBMRegressor) LoadModelWithBufferSize(filepath string, bufferSize int) error {
-	model, err := LoadFromFileWithBufferSize(filepath, bufferSize)
+func (lgb *LGBMRegressor) LoadModel(filepath string, opts ...LoadOption) error {
+	model, err := LoadFromFile(filepath, opts...)
 	if err != nil {
 		return fmt.Errorf("failed to load model: %w", err)
 	}
@@ -499,8 +495,8 @@ func (lgb *LGBMRegressor) LoadModelWithBufferSize(filepath string, bufferSize in
 }
 
 // LoadModelFromString loads a model from string format
-func (lgb *LGBMRegressor) LoadModelFromString(modelStr string) error {
-	model, err := LoadFromString(modelStr)
+func (lgb *LGBMRegressor) LoadModelFromString(modelStr string, opts ...LoadOption) error {
+	model, err := LoadFromString(modelStr, opts...)
 	if err != nil {
 		return fmt.Errorf("failed to load model from string: %w", err)
 	}

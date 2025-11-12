@@ -559,8 +559,8 @@ func (lgb *LGBMClassifier) Score(X, y mat.Matrix) (float64, error) {
 }
 
 // LoadModel loads a pre-trained LightGBM model from file
-func (lgb *LGBMClassifier) LoadModel(filepath string) error {
-	model, err := LoadFromFile(filepath)
+func (lgb *LGBMClassifier) LoadModel(filepath string, opts ...LoadOption) error {
+	model, err := LoadFromFile(filepath, opts...)
 	if err != nil {
 		return fmt.Errorf("failed to load model: %w", err)
 	}
@@ -590,8 +590,8 @@ func (lgb *LGBMClassifier) LoadModel(filepath string) error {
 }
 
 // LoadModelFromString loads a model from string format
-func (lgb *LGBMClassifier) LoadModelFromString(modelStr string) error {
-	model, err := LoadFromString(modelStr)
+func (lgb *LGBMClassifier) LoadModelFromString(modelStr string, opts ...LoadOption) error {
+	model, err := LoadFromString(modelStr, opts...)
 	if err != nil {
 		return fmt.Errorf("failed to load model from string: %w", err)
 	}
