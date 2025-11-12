@@ -13,7 +13,7 @@ This package provides a Python-compatible API for LightGBM in Go, allowing users
 ## Installation
 
 ```bash
-go get github.com/YuminosukeSato/scigo/sklearn/lightgbm/api
+go get github.com/ezoic/scigo/sklearn/lightgbm/api
 ```
 
 ## Quick Start
@@ -60,7 +60,7 @@ bst.save_model('model.txt')
 
 ```go
 import (
-    "github.com/YuminosukeSato/scigo/sklearn/lightgbm/api"
+    "github.com/ezoic/scigo/sklearn/lightgbm/api"
     "gonum.org/v1/gonum/mat"
 )
 

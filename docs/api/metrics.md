@@ -5,7 +5,7 @@ Complete API documentation for the `metrics` package.
 ## Package Overview
 
 ```go
-import "github.com/YuminosukeSato/scigo/metrics"
+import "github.com/ezoic/scigo/metrics"
 ```
 
 The `metrics` package provides evaluation metrics for regression and classification models.

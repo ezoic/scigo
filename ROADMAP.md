@@ -201,9 +201,9 @@ We welcome contributions! Priority areas for community help:
 ## Contact
 
 - **Project Lead**: Yuminosuke Sato
-- **GitHub**: [https://github.com/YuminosukeSato/scigo](https://github.com/YuminosukeSato/scigo)
-- **Issues**: [GitHub Issues](https://github.com/YuminosukeSato/scigo/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YuminosukeSato/scigo/discussions)
+- **GitHub**: [https://github.com/ezoic/scigo](https://github.com/ezoic/scigo)
+- **Issues**: [GitHub Issues](https://github.com/ezoic/scigo/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/ezoic/scigo/discussions)
 
 ---
 

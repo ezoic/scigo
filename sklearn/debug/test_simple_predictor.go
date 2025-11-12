@@ -7,7 +7,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/sklearn/lightgbm"
+	"github.com/ezoic/scigo/sklearn/lightgbm"
 )
 
 func testSimplePredictor() {

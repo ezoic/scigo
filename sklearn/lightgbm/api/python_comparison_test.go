@@ -6,7 +6,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/sklearn/lightgbm/api"
+	"github.com/ezoic/scigo/sklearn/lightgbm/api"
 )
 
 // TestPythonStyleAPI tests that the Go API produces similar results to Python LightGBM

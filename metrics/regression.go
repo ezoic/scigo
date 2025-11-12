@@ -33,7 +33,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	scigoErrors "github.com/YuminosukeSato/scigo/pkg/errors"
+	scigoErrors "github.com/ezoic/scigo/pkg/errors"
 )
 
 // MSE calculates the Mean Squared Error between true and predicted values.

@@ -5,7 +5,7 @@ Complete API documentation for the `core` package.
 ## Package Overview
 
 ```go
-import "github.com/YuminosukeSato/scigo/core"
+import "github.com/ezoic/scigo/core"
 ```
 
 The `core` package provides fundamental interfaces, types, and utilities used throughout SciGo.
@@ -861,10 +861,10 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/core/model"
-    "github.com/YuminosukeSato/scigo/core/errors"
-    "github.com/YuminosukeSato/scigo/core/parallel"
-    "github.com/YuminosukeSato/scigo/core/validation"
+    "github.com/ezoic/scigo/core/model"
+    "github.com/ezoic/scigo/core/errors"
+    "github.com/ezoic/scigo/core/parallel"
+    "github.com/ezoic/scigo/core/validation"
     "gonum.org/v1/gonum/mat"
 )
 

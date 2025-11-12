@@ -6,9 +6,9 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/core/model"
-	scigoErrors "github.com/YuminosukeSato/scigo/pkg/errors"
-	"github.com/YuminosukeSato/scigo/pkg/log"
+	"github.com/ezoic/scigo/core/model"
+	scigoErrors "github.com/ezoic/scigo/pkg/errors"
+	"github.com/ezoic/scigo/pkg/log"
 )
 
 // LGBMClassifier implements a LightGBM classifier with scikit-learn compatible API

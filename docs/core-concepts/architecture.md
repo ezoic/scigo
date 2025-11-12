@@ -37,7 +37,7 @@ SciGo's architecture is designed for performance, maintainability, and ease of u
 ## Package Structure
 
 ```
-github.com/YuminosukeSato/scigo/
+github.com/ezoic/scigo/
 ├── core/               # Core functionality
 │   ├── model/         # Model interfaces and base types
 │   ├── parallel/      # Parallel processing utilities

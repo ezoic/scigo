@@ -13,9 +13,9 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
-    "github.com/YuminosukeSato/scigo/metrics"
-    "github.com/YuminosukeSato/scigo/preprocessing"
+    "github.com/ezoic/scigo/linear"
+    "github.com/ezoic/scigo/metrics"
+    "github.com/ezoic/scigo/preprocessing"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -106,7 +106,7 @@ package main
 
 import (
     "fmt"
-    "github.com/YuminosukeSato/scigo/sklearn/linear_model"
+    "github.com/ezoic/scigo/sklearn/linear_model"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -149,7 +149,7 @@ package main
 
 import (
     "fmt"
-    "github.com/YuminosukeSato/scigo/sklearn/cluster"
+    "github.com/ezoic/scigo/sklearn/cluster"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -187,7 +187,7 @@ func main() {
 ### Save a Model
 
 ```go
-import "github.com/YuminosukeSato/scigo/core/model"
+import "github.com/ezoic/scigo/core/model"
 
 // After training
 err := model.SaveModel(lr, "my_model.gob")
@@ -234,8 +234,8 @@ package main
 
 import (
     "context"
-    "github.com/YuminosukeSato/scigo/sklearn/linear_model"
-    "github.com/YuminosukeSato/scigo/core/model"
+    "github.com/ezoic/scigo/sklearn/linear_model"
+    "github.com/ezoic/scigo/core/model"
 )
 
 func main() {
@@ -352,6 +352,6 @@ bestModel := GridSearchCV(model, params, X, y)
 ## Getting Help
 
 - 📖 Read the [API Reference](../api/)
-- 💬 Ask questions in [Discussions](https://github.com/YuminosukeSato/scigo/discussions)
-- 🐛 Report issues on [GitHub](https://github.com/YuminosukeSato/scigo/issues)
+- 💬 Ask questions in [Discussions](https://github.com/ezoic/scigo/discussions)
+- 🐛 Report issues on [GitHub](https://github.com/ezoic/scigo/issues)
 - 📧 Contact: support@scigo.dev

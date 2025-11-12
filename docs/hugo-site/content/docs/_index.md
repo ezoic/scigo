@@ -120,16 +120,16 @@ Deploy SciGo applications with Docker and cloud platforms.
 
 ## Reference
 
-- [**API Reference**](https://pkg.go.dev/github.com/YuminosukeSato/scigo) - Complete Go package documentation
+- [**API Reference**](https://pkg.go.dev/github.com/ezoic/scigo) - Complete Go package documentation
 - [**Examples**](./examples/) - Code examples and tutorials  
 - [**FAQ**](./faq/) - Frequently asked questions
 - [**Troubleshooting**](./troubleshooting/) - Common issues and solutions
 
 ## Community
 
-- [GitHub Repository](https://github.com/YuminosukeSato/scigo)
-- [Issue Tracker](https://github.com/YuminosukeSato/scigo/issues)
-- [Discussions](https://github.com/YuminosukeSato/scigo/discussions)
+- [GitHub Repository](https://github.com/ezoic/scigo)
+- [Issue Tracker](https://github.com/ezoic/scigo/issues)
+- [Discussions](https://github.com/ezoic/scigo/discussions)
 - [Contributing Guide](./contributing/)
 
 ---

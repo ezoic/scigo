@@ -11,8 +11,8 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/core/model"
-	"github.com/YuminosukeSato/scigo/sklearn/linear_model"
+	"github.com/ezoic/scigo/core/model"
+	"github.com/ezoic/scigo/sklearn/linear_model"
 )
 
 func main() {

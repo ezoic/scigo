@@ -5,7 +5,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/preprocessing"
+	"github.com/ezoic/scigo/preprocessing"
 )
 
 // ExampleStandardScaler demonstrates basic usage of StandardScaler

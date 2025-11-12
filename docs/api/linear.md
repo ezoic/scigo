@@ -5,7 +5,7 @@ Complete API documentation for the `linear` package.
 ## Package Overview
 
 ```go
-import "github.com/YuminosukeSato/scigo/linear"
+import "github.com/ezoic/scigo/linear"
 ```
 
 The `linear` package provides linear models for regression and classification tasks.
@@ -258,9 +258,9 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
-    "github.com/YuminosukeSato/scigo/metrics"
-    "github.com/YuminosukeSato/scigo/preprocessing"
+    "github.com/ezoic/scigo/linear"
+    "github.com/ezoic/scigo/metrics"
+    "github.com/ezoic/scigo/preprocessing"
     "gonum.org/v1/gonum/mat"
 )
 

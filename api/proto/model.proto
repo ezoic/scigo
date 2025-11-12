@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package scigo.ml;
 
-option go_package = "github.com/YuminosukeSato/scigo/api/proto/ml";
+option go_package = "github.com/ezoic/scigo/api/proto/ml";
 
 // ModelWeights は機械学習モデルの重みを表す
 message ModelWeights {

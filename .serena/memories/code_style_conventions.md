@@ -4,9 +4,9 @@
 Imports must be organized in three groups separated by blank lines:
 1. Standard library imports
 2. Third-party imports (e.g., gonum.org/v1/gonum/mat)
-3. Local project imports (github.com/YuminosukeSato/scigo/*)
+3. Local project imports (github.com/ezoic/scigo/*)
 
-Use `goimports -w -local github.com/YuminosukeSato/scigo .` to fix import ordering.
+Use `goimports -w -local github.com/ezoic/scigo .` to fix import ordering.
 
 ## Go Conventions
 - Package names: lowercase, single word
@@ -22,11 +22,11 @@ Use `goimports -w -local github.com/YuminosukeSato/scigo .` to fix import orderi
 - Example tests in example_test.go files
 
 ## Error Handling
-- Use github.com/YuminosukeSato/scigo/pkg/errors for error wrapping
+- Use github.com/ezoic/scigo/pkg/errors for error wrapping
 - Always wrap errors with context using fmt.Errorf or errors.Wrap
 - Check errors immediately after function calls
 
 ## Logging
-- Use github.com/YuminosukeSato/scigo/pkg/log for logging
+- Use github.com/ezoic/scigo/pkg/log for logging
 - Structured logging with zerolog under the hood
 - Log levels: Debug, Info, Warn, Error

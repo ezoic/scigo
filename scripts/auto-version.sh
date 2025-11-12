@@ -56,8 +56,8 @@ TEMP_FILE=$(mktemp)
 # Update the comparison links at the bottom
 {
     head -n -1 "$TEMP_FILE"
-    echo "[Unreleased]: https://github.com/YuminosukeSato/scigo/compare/v${NEW_VERSION}...HEAD"
-    echo "[$NEW_VERSION]: https://github.com/YuminosukeSato/scigo/compare/v${CURRENT_VERSION}...v${NEW_VERSION}"
+    echo "[Unreleased]: https://github.com/ezoic/scigo/compare/v${NEW_VERSION}...HEAD"
+    echo "[$NEW_VERSION]: https://github.com/ezoic/scigo/compare/v${CURRENT_VERSION}...v${NEW_VERSION}"
     tail -n +2 "$CHANGELOG_FILE" | grep -E '^\[[0-9]+\.[0-9]+\.[0-9]+\]:' || true
 } > "${TEMP_FILE}.final"
 

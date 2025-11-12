@@ -5,7 +5,7 @@ When completing any coding task in SciGo, always run these commands:
 ## 1. Format Code
 ```bash
 # Fix import ordering (CRITICAL for CI)
-goimports -w -local github.com/YuminosukeSato/scigo .
+goimports -w -local github.com/ezoic/scigo .
 
 # Format Go code
 gofumpt -w .
@@ -32,7 +32,7 @@ go mod tidy
 ## 5. Final Verification
 ```bash
 # Check that imports are correctly ordered
-goimports -l -local github.com/YuminosukeSato/scigo .
+goimports -l -local github.com/ezoic/scigo .
 # Should return nothing if all files are properly formatted
 ```
 

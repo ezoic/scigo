@@ -7,7 +7,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/core/model"
+	"github.com/ezoic/scigo/core/model"
 )
 
 // TestLinearRegressionWeightReproducibility tests complete weight reproducibility

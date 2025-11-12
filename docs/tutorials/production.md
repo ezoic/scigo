@@ -44,9 +44,9 @@ import (
     "syscall"
     "time"
     
-    "github.com/YuminosukeSato/scigo/linear"
-    "github.com/YuminosukeSato/scigo/core/model"
-    "github.com/YuminosukeSato/scigo/preprocessing"
+    "github.com/ezoic/scigo/linear"
+    "github.com/ezoic/scigo/core/model"
+    "github.com/ezoic/scigo/preprocessing"
     "gonum.org/v1/gonum/mat"
 )
 

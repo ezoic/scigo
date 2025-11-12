@@ -13,13 +13,13 @@ Thank you for your interest in contributing to SciGo! We welcome contributions f
 
 1. **Set up your development environment:**
    ```bash
-   git clone https://github.com/YuminosukeSato/scigo.git
+   git clone https://github.com/ezoic/scigo.git
    cd scigo
    make setup-dev  # Installs all tools and dependencies
    ```
 
 2. **Find an issue to work on:**
-   - Look for issues labeled [`good first issue`](https://github.com/YuminosukeSato/scigo/issues?q=label%3A%22good+first+issue%22)
+   - Look for issues labeled [`good first issue`](https://github.com/ezoic/scigo/issues?q=label%3A%22good+first+issue%22)
    - Or fix a typo in documentation
    - Or add a missing test
 

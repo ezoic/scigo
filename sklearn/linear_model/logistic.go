@@ -10,7 +10,7 @@ import (
 	"gonum.org/v1/gonum/mat"
 	"gonum.org/v1/gonum/optimize"
 
-	"github.com/YuminosukeSato/scigo/core/model"
+	"github.com/ezoic/scigo/core/model"
 )
 
 const (

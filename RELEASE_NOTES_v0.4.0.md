@@ -40,11 +40,11 @@
 
 ### 📦 Installation
 ```bash
-go get github.com/YuminosukeSato/scigo@v0.4.0
+go get github.com/ezoic/scigo@v0.4.0
 ```
 
 ### 📚 Documentation
-Full documentation available at: https://pkg.go.dev/github.com/YuminosukeSato/scigo
+Full documentation available at: https://pkg.go.dev/github.com/ezoic/scigo
 
 ### 🚀 What's Next
 - v0.5.0: RandomForestClassifier, RandomForestRegressor, and SVM implementation

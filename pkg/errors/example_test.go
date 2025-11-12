@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	scigoErrors "github.com/YuminosukeSato/scigo/pkg/errors"
+	scigoErrors "github.com/ezoic/scigo/pkg/errors"
 )
 
 // Example demonstrates Go 1.13+ error wrapping

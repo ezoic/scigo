@@ -15,7 +15,7 @@ This guide covers the installation of SciGo and setting up your development envi
 Add SciGo to your project using Go modules:
 
 ```bash
-go get github.com/YuminosukeSato/scigo@latest
+go get github.com/ezoic/scigo@latest
 ```
 
 This will add SciGo to your `go.mod` file and download all dependencies.
@@ -25,7 +25,7 @@ This will add SciGo to your `go.mod` file and download all dependencies.
 Clone the repository and build from source:
 
 ```bash
-git clone https://github.com/YuminosukeSato/scigo.git
+git clone https://github.com/ezoic/scigo.git
 cd scigo
 go build ./...
 ```
@@ -41,7 +41,7 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
+    "github.com/ezoic/scigo/linear"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -108,7 +108,7 @@ sudo dnf install blas-devel lapack-devel
 On Windows, use PowerShell or Command Prompt:
 
 ```powershell
-go get github.com/YuminosukeSato/scigo@latest
+go get github.com/ezoic/scigo@latest
 ```
 
 ## Docker Installation
@@ -189,13 +189,13 @@ Install the Go extension and add these settings to `.vscode/settings.json`:
 ```bash
 # Solution: Clear the module cache
 go clean -modcache
-go get github.com/YuminosukeSato/scigo@latest
+go get github.com/ezoic/scigo@latest
 ```
 
 **Issue**: Import cycle errors
 ```bash
 # Solution: Update to the latest version
-go get -u github.com/YuminosukeSato/scigo@latest
+go get -u github.com/ezoic/scigo@latest
 ```
 
 **Issue**: Memory errors with large datasets
@@ -209,8 +209,8 @@ export GOGC=200  # Increase garbage collection threshold
 If you encounter issues:
 
 1. Check the [FAQ](../faq.md)
-2. Search [existing issues](https://github.com/YuminosukeSato/scigo/issues)
-3. Create a [new issue](https://github.com/YuminosukeSato/scigo/issues/new) with:
+2. Search [existing issues](https://github.com/ezoic/scigo/issues)
+3. Create a [new issue](https://github.com/ezoic/scigo/issues/new) with:
    - Go version (`go version`)
    - SciGo version
    - Complete error message

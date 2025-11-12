@@ -26,7 +26,7 @@ Streaming ML enables learning from continuous data streams, essential for real-t
 package streaming
 
 import (
-    "github.com/YuminosukeSato/scigo/sklearn/linear_model"
+    "github.com/ezoic/scigo/sklearn/linear_model"
     "gonum.org/v1/gonum/mat"
 )
 

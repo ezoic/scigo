@@ -5,7 +5,7 @@
 ### Formatting and Linting
 ```bash
 # Fix import ordering (REQUIRED before commit)
-goimports -w -local github.com/YuminosukeSato/scigo .
+goimports -w -local github.com/ezoic/scigo .
 
 # Format code
 go fmt ./...
@@ -89,7 +89,7 @@ The CI workflow checks:
 Always run these checks before pushing:
 ```bash
 # Quick check
-goimports -l -local github.com/YuminosukeSato/scigo .
+goimports -l -local github.com/ezoic/scigo .
 gofumpt -l .
 go mod tidy
 go test -short ./...

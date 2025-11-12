@@ -101,7 +101,7 @@ fmt: ## Format code
 fmt-ci: install-formatters ## Format code with gofumpt and goimports (CI-compatible)
 	@echo -e "$(GREEN)Formatting code with gofumpt and goimports...$(NC)"
 	@gofumpt -w .
-	@goimports -w -local github.com/YuminosukeSato/scigo .
+	@goimports -w -local github.com/ezoic/scigo .
 
 fmt-check: ## Check if code is formatted
 	@echo -e "$(GREEN)Checking code formatting...$(NC)"
@@ -122,8 +122,8 @@ check-fmt: install-formatters ## Check formatting with gofumpt and goimports (CI
 		exit 1; \
 	fi
 	@echo -e "$(GREEN)Checking goimports formatting...$(NC)"
-	@goimports -l -d -local github.com/YuminosukeSato/scigo .
-	@if [ -n "$$(goimports -l -local github.com/YuminosukeSato/scigo .)" ]; then \
+	@goimports -l -d -local github.com/ezoic/scigo .
+	@if [ -n "$$(goimports -l -local github.com/ezoic/scigo .)" ]; then \
 		echo -e "$(RED)❌ goimports formatting issues found. Run 'make fmt-ci' locally$(NC)"; \
 		exit 1; \
 	fi

@@ -27,8 +27,8 @@ import (
     "os"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
-    "github.com/YuminosukeSato/scigo/core/model"
+    "github.com/ezoic/scigo/linear"
+    "github.com/ezoic/scigo/core/model"
 )
 
 func saveModelBinary() {
@@ -294,7 +294,7 @@ package persistence
 
 import (
     "github.com/golang/protobuf/proto"
-    pb "github.com/YuminosukeSato/scigo/proto"
+    pb "github.com/ezoic/scigo/proto"
 )
 
 func SaveModelProto(model Model, filename string) error {

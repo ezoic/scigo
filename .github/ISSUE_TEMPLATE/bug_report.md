@@ -24,7 +24,7 @@ A clear and concise description of what you expected to happen.
 package main
 
 import (
-    "github.com/YuminosukeSato/scigo/..."
+    "github.com/ezoic/scigo/..."
 )
 
 func main() {

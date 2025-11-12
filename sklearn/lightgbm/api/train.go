@@ -6,8 +6,8 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/metrics"
-	lgb "github.com/YuminosukeSato/scigo/sklearn/lightgbm"
+	"github.com/ezoic/scigo/metrics"
+	lgb "github.com/ezoic/scigo/sklearn/lightgbm"
 )
 
 // Train trains a LightGBM model, similar to Python's lgb.train()

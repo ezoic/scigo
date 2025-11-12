@@ -3,7 +3,7 @@
 
 **Date**: 2025-08-07  
 **Auditor**: Security Engineering Team  
-**Library**: github.com/YuminosukeSato/scigo  
+**Library**: github.com/ezoic/scigo  
 **Version**: Based on main branch  
 **Risk Level**: **HIGH** - Critical vulnerabilities identified
 

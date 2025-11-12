@@ -5,9 +5,9 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/linear"
-	"github.com/YuminosukeSato/scigo/pkg/errors"
-	"github.com/YuminosukeSato/scigo/pkg/log"
+	"github.com/ezoic/scigo/linear"
+	"github.com/ezoic/scigo/pkg/errors"
+	"github.com/ezoic/scigo/pkg/log"
 )
 
 func main() {

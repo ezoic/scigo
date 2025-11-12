@@ -21,7 +21,7 @@ package main
 
 import (
     "math"
-    "github.com/YuminosukeSato/scigo/preprocessing"
+    "github.com/ezoic/scigo/preprocessing"
     "gonum.org/v1/gonum/mat"
 )
 

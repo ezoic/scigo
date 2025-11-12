@@ -12,7 +12,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/pkg/log"
+	"github.com/ezoic/scigo/pkg/log"
 )
 
 // Trainer implements the LightGBM training algorithm

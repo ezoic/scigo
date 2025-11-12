@@ -1,11 +1,11 @@
-module github.com/YuminosukeSato/scigo/examples/quick-start
+module github.com/ezoic/scigo/examples/quick-start
 
 go 1.23.0
 
 toolchain go1.24.4
 
 require (
-	github.com/YuminosukeSato/scigo v0.2.0
+	github.com/ezoic/scigo v0.2.0
 	gonum.org/v1/gonum v0.16.0
 )
 
@@ -26,4 +26,4 @@ require (
 	golang.org/x/text v0.27.0 // indirect
 )
 
-replace github.com/YuminosukeSato/scigo => ../..
+replace github.com/ezoic/scigo => ../..

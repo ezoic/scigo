@@ -160,7 +160,7 @@ func (s *StateManager) Reset() {
 package mymodel
 
 import (
-    "github.com/YuminosukeSato/scigo/core/model"
+    "github.com/ezoic/scigo/core/model"
     "gonum.org/v1/gonum/mat"
 )
 

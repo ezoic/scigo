@@ -3,7 +3,7 @@ package preprocessing_test
 import (
 	"testing"
 
-	"github.com/YuminosukeSato/scigo/preprocessing"
+	"github.com/ezoic/scigo/preprocessing"
 )
 
 func TestOneHotEncoder_Fit(t *testing.T) {

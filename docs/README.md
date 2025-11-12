@@ -68,8 +68,8 @@ Use GitHub's search feature or browse the documentation structure above to find 
 
 ## 💬 Getting Help
 
-- [GitHub Issues](https://github.com/YuminosukeSato/scigo/issues) - Report bugs or request features
-- [Discussions](https://github.com/YuminosukeSato/scigo/discussions) - Ask questions and share ideas
+- [GitHub Issues](https://github.com/ezoic/scigo/issues) - Report bugs or request features
+- [Discussions](https://github.com/ezoic/scigo/discussions) - Ask questions and share ideas
 - [Examples](../examples/) - Browse working code examples
 
 ## 📝 License

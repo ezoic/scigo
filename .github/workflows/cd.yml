@@ -115,12 +115,12 @@ jobs:
         
         ### Go Install (Recommended)
         ```bash
-        go install github.com/YuminosukeSato/scigo@latest
+        go install github.com/ezoic/scigo@latest
         ```
         
         ### Go Module
         ```bash
-        go get github.com/YuminosukeSato/scigo@VERSION
+        go get github.com/ezoic/scigo@VERSION
         ```
         
         ### Docker
@@ -130,9 +130,9 @@ jobs:
         
         ## Documentation
         
-        - [API Documentation](https://pkg.go.dev/github.com/YuminosukeSato/scigo)
-        - [Examples](https://github.com/YuminosukeSato/scigo/tree/main/examples)
-        - [Migration Guide](https://github.com/YuminosukeSato/scigo#-scikit-learn-compatibility)
+        - [API Documentation](https://pkg.go.dev/github.com/ezoic/scigo)
+        - [Examples](https://github.com/ezoic/scigo/tree/main/examples)
+        - [Migration Guide](https://github.com/ezoic/scigo#-scikit-learn-compatibility)
         EOF
         
         # Replace VERSION placeholder
@@ -168,7 +168,7 @@ jobs:
       if: steps.check.outputs.should_release == 'true'
       run: |
         # Trigger pkg.go.dev to update
-        curl "https://proxy.golang.org/github.com/YuminosukeSato/scigo/@v/${{ steps.version.outputs.tag }}.info"
+        curl "https://proxy.golang.org/github.com/ezoic/scigo/@v/${{ steps.version.outputs.tag }}.info"
         
   build-docker:
     name: Build and Push Docker Image
@@ -240,9 +240,9 @@ jobs:
                   `- ✅ Docker image pushed to ghcr.io\n` +
                   `- ✅ pkg.go.dev update triggered\n\n` +
                   `### Manual Verification\n` +
-                  `- [ ] Verify pkg.go.dev updated: https://pkg.go.dev/github.com/YuminosukeSato/scigo\n` +
+                  `- [ ] Verify pkg.go.dev updated: https://pkg.go.dev/github.com/ezoic/scigo\n` +
                   `- [ ] Verify Docker image: ${docker_url}\n` +
-                  `- [ ] Test installation with: \`go install github.com/YuminosukeSato/scigo@latest\`\n` +
+                  `- [ ] Test installation with: \`go install github.com/ezoic/scigo@latest\`\n` +
                   `- [ ] Test Docker image: \`docker pull ghcr.io/yuminosukesato/scigo:${version.substring(1)}\`\n\n` +
                   `### Optional Tasks\n` +
                   `- [ ] Update dependent projects\n` +

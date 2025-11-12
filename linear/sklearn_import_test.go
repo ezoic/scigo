@@ -10,8 +10,8 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/core/model"
-	"github.com/YuminosukeSato/scigo/linear"
+	"github.com/ezoic/scigo/core/model"
+	"github.com/ezoic/scigo/linear"
 )
 
 func TestLinearRegression_LoadFromSKLearn(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/YuminosukeSato/scigo
+module github.com/ezoic/scigo
 
 go 1.24.0
 

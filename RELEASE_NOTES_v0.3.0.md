@@ -15,7 +15,7 @@ This release brings **full scikit-learn API compatibility** and **guaranteed wei
 ## 📦 Installation
 
 ```bash
-go get github.com/YuminosukeSato/scigo@v0.3.0
+go get github.com/ezoic/scigo@v0.3.0
 ```
 
 ## 🚀 Key Features
@@ -82,7 +82,7 @@ newModel.ImportWeights(&loadedWeights)
 ## 📚 Documentation
 
 - [Migration Guide](docs/sklearn-migration-guide.md) - Updated with new features
-- [API Documentation](https://pkg.go.dev/github.com/YuminosukeSato/scigo) - Full API reference
+- [API Documentation](https://pkg.go.dev/github.com/ezoic/scigo) - Full API reference
 - [Weight Export Examples](examples/weight_export/) - Coming soon
 
 ## 🔧 Breaking Changes
@@ -119,7 +119,7 @@ For users upgrading from v0.2.0:
 package main
 
 import (
-    "github.com/YuminosukeSato/scigo/sklearn/linear_model"
+    "github.com/ezoic/scigo/sklearn/linear_model"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -148,7 +148,7 @@ func main() {
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed changes.
 
-**Full Changelog**: https://github.com/YuminosukeSato/scigo/compare/v0.2.0...v0.3.0
+**Full Changelog**: https://github.com/ezoic/scigo/compare/v0.2.0...v0.3.0
 
 ---
 

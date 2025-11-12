@@ -67,7 +67,7 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
+    "github.com/ezoic/scigo/linear"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -106,7 +106,7 @@ package main
 import (
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
+    "github.com/ezoic/scigo/linear"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -551,8 +551,8 @@ import (
     "encoding/json"
     "os"
     
-    "github.com/YuminosukeSato/scigo/preprocessing"
-    "github.com/YuminosukeSato/scigo/sklearn/linear_model"
+    "github.com/ezoic/scigo/preprocessing"
+    "github.com/ezoic/scigo/sklearn/linear_model"
 )
 
 type PipelineData struct {

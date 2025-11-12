@@ -107,8 +107,8 @@ esac
 
 echo ""
 echo "🎉 Demo completed!"
-echo "📚 Learn more: https://pkg.go.dev/github.com/YuminosukeSato/scigo"
-echo "💻 Source: https://github.com/YuminosukeSato/scigo"
+echo "📚 Learn more: https://pkg.go.dev/github.com/ezoic/scigo"
+echo "💻 Source: https://github.com/ezoic/scigo"
 echo ""
 echo "Ready, Set, SciGo! 🚀"
 EOF
@@ -130,8 +130,8 @@ CMD ["scigo-demo"]
 LABEL org.opencontainers.image.title="SciGo"
 LABEL org.opencontainers.image.description="The blazing-fast scikit-learn compatible ML library for Go"
 LABEL org.opencontainers.image.version="0.2.0"
-LABEL org.opencontainers.image.source="https://github.com/YuminosukeSato/scigo"
-LABEL org.opencontainers.image.documentation="https://pkg.go.dev/github.com/YuminosukeSato/scigo"
+LABEL org.opencontainers.image.source="https://github.com/ezoic/scigo"
+LABEL org.opencontainers.image.documentation="https://pkg.go.dev/github.com/ezoic/scigo"
 LABEL org.opencontainers.image.vendor="Yuminosuke Sato"
 LABEL org.opencontainers.image.licenses="MIT"
 
@@ -141,5 +141,5 @@ LABEL org.opencontainers.image.licenses="MIT"
 # Add usage instructions as environment variables
 ENV SCIGO_VERSION="0.2.0"
 ENV SCIGO_USAGE="Run 'scigo-demo' to see available demonstrations"
-ENV SCIGO_DOCS="https://pkg.go.dev/github.com/YuminosukeSato/scigo"
-ENV SCIGO_SOURCE="https://github.com/YuminosukeSato/scigo"
+ENV SCIGO_DOCS="https://pkg.go.dev/github.com/ezoic/scigo"
+ENV SCIGO_SOURCE="https://github.com/ezoic/scigo"

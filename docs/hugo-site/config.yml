@@ -5,7 +5,7 @@ theme: "docsy"
 
 # Repository info
 params:
-  github_repo: "https://github.com/YuminosukeSato/scigo"
+  github_repo: "https://github.com/ezoic/scigo"
   github_branch: "main"
   
   # Site info
@@ -37,10 +37,10 @@ params:
   # Social links
   social:
     - name: "GitHub"
-      url: "https://github.com/YuminosukeSato/scigo"
+      url: "https://github.com/ezoic/scigo"
       icon: "fab fa-github"
     - name: "Go Package"
-      url: "https://pkg.go.dev/github.com/YuminosukeSato/scigo"
+      url: "https://pkg.go.dev/github.com/ezoic/scigo"
       icon: "fas fa-cube"
 
 # Menu configuration
@@ -50,13 +50,13 @@ menu:
       url: "/docs/"
       weight: 10
     - name: "API Reference"
-      url: "https://pkg.go.dev/github.com/YuminosukeSato/scigo"
+      url: "https://pkg.go.dev/github.com/ezoic/scigo"
       weight: 20
     - name: "Examples"
       url: "/examples/"
       weight: 30
     - name: "GitHub"
-      url: "https://github.com/YuminosukeSato/scigo"
+      url: "https://github.com/ezoic/scigo"
       weight: 40
 
 # Markup configuration

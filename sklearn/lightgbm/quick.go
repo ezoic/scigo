@@ -6,7 +6,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/pkg/log"
+	"github.com/ezoic/scigo/pkg/log"
 )
 
 // QuickResult holds the result of a quick training session

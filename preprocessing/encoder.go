@@ -6,8 +6,8 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/core/model"
-	scigoErrors "github.com/YuminosukeSato/scigo/pkg/errors"
+	"github.com/ezoic/scigo/core/model"
+	scigoErrors "github.com/ezoic/scigo/pkg/errors"
 )
 
 // OneHotEncoder はscikit-learn互換のOne-Hotエンコーダー

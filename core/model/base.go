@@ -132,7 +132,7 @@ func (e *BaseEstimator) Reset() {
 //
 // Example:
 //
-//	import "github.com/YuminosukeSato/scigo/pkg/log"
+//	import "github.com/ezoic/scigo/pkg/log"
 //	model.SetLogger(log.GetLoggerWithName("LinearRegression"))
 func (e *BaseEstimator) SetLogger(logger interface{}) {
 	e.logger = logger

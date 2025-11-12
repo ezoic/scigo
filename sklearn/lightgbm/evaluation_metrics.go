@@ -7,7 +7,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	scigoErrors "github.com/YuminosukeSato/scigo/pkg/errors"
+	scigoErrors "github.com/ezoic/scigo/pkg/errors"
 )
 
 // ClassificationMetrics provides comprehensive evaluation metrics for classification models

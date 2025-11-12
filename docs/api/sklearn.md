@@ -5,7 +5,7 @@ Complete API documentation for scikit-learn compatible models in the `sklearn` p
 ## Package Overview
 
 ```go
-import "github.com/YuminosukeSato/scigo/sklearn"
+import "github.com/ezoic/scigo/sklearn"
 ```
 
 The `sklearn` package provides models with APIs compatible with scikit-learn, enabling seamless model interchange between Python and Go.
@@ -766,9 +766,9 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/sklearn"
-    "github.com/YuminosukeSato/scigo/preprocessing"
-    "github.com/YuminosukeSato/scigo/metrics"
+    "github.com/ezoic/scigo/sklearn"
+    "github.com/ezoic/scigo/preprocessing"
+    "github.com/ezoic/scigo/metrics"
     "gonum.org/v1/gonum/mat"
 )
 

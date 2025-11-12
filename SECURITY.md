@@ -169,7 +169,7 @@ make security-report   # Generate comprehensive security report
 
 For security concerns, please contact:
 - Primary: security@scigo.dev
-- GitHub Security Advisories: [Create private advisory](https://github.com/YuminosukeSato/scigo/security/advisories/new)
+- GitHub Security Advisories: [Create private advisory](https://github.com/ezoic/scigo/security/advisories/new)
 
 ## Acknowledgments
 

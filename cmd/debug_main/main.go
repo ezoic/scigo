@@ -7,7 +7,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	lightgbm "github.com/YuminosukeSato/scigo/sklearn/lightgbm"
+	lightgbm "github.com/ezoic/scigo/sklearn/lightgbm"
 )
 
 // VerificationData represents the Python verification data structure.

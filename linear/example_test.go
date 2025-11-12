@@ -5,7 +5,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/linear"
+	"github.com/ezoic/scigo/linear"
 )
 
 // ExampleLinearRegression demonstrates basic linear regression usage

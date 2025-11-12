@@ -6,7 +6,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/metrics"
+	"github.com/ezoic/scigo/metrics"
 )
 
 // ExampleMSE demonstrates Mean Squared Error calculation

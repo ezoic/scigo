@@ -27,8 +27,8 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/sklearn/cluster"
-    "github.com/YuminosukeSato/scigo/metrics"
+    "github.com/ezoic/scigo/sklearn/cluster"
+    "github.com/ezoic/scigo/metrics"
     "gonum.org/v1/gonum/mat"
 )
 

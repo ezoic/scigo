@@ -54,7 +54,7 @@ score = model.score(X_test, y_test)
 ```go
 // SciGo (Go)
 import (
-    "github.com/YuminosukeSato/scigo/linear"
+    "github.com/ezoic/scigo/linear"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -82,7 +82,7 @@ X_minmax = minmax.fit_transform(X_train)
 
 ```go
 // SciGo (Go)
-import "github.com/YuminosukeSato/scigo/preprocessing"
+import "github.com/ezoic/scigo/preprocessing"
 
 // Standard scaling
 scaler := preprocessing.NewStandardScaler(true, true)
@@ -106,7 +106,7 @@ r2 = r2_score(y_true, y_pred)
 
 ```go
 // SciGo (Go)
-import "github.com/YuminosukeSato/scigo/metrics"
+import "github.com/ezoic/scigo/metrics"
 
 mse, err := metrics.MSE(yTrue, yPred)
 r2, err := metrics.R2Score(yTrue, yPred)
@@ -165,9 +165,9 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
-    "github.com/YuminosukeSato/scigo/preprocessing" 
-    "github.com/YuminosukeSato/scigo/metrics"
+    "github.com/ezoic/scigo/linear"
+    "github.com/ezoic/scigo/preprocessing" 
+    "github.com/ezoic/scigo/metrics"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -432,7 +432,7 @@ func gridSearchCV(model Estimator, params map[string][]float64, X, y *mat.Dense)
 
 ### Phase 1: Setup
 - [ ] Install Go (1.23+)
-- [ ] Add SciGo dependency: `go get github.com/YuminosukeSato/scigo`
+- [ ] Add SciGo dependency: `go get github.com/ezoic/scigo`
 - [ ] Set up Go development environment
 - [ ] Convert data loading to Gonum matrices
 
@@ -511,10 +511,10 @@ X := mat.NewDense(1, 3, data) // Correct
 
 ### Getting Help
 
-- **Documentation**: [pkg.go.dev/scigo](https://pkg.go.dev/github.com/YuminosukeSato/scigo)
-- **Examples**: [GitHub Examples](https://github.com/YuminosukeSato/scigo/tree/main/examples)
-- **Issues**: [GitHub Issues](https://github.com/YuminosukeSato/scigo/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YuminosukeSato/scigo/discussions)
+- **Documentation**: [pkg.go.dev/scigo](https://pkg.go.dev/github.com/ezoic/scigo)
+- **Examples**: [GitHub Examples](https://github.com/ezoic/scigo/tree/main/examples)
+- **Issues**: [GitHub Issues](https://github.com/ezoic/scigo/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/ezoic/scigo/discussions)
 
 ## Next Steps
 
@@ -529,6 +529,6 @@ After successful migration:
 
 **Ready to make the switch?** Start with our [Quick Start Guide](./docs/getting-started/quickstart/) or try the [30-second Docker demo](./docker-compose.yml).
 
-**Questions?** Join the discussion on [GitHub](https://github.com/YuminosukeSato/scigo/discussions) or check out our [FAQ](./docs/faq/).
+**Questions?** Join the discussion on [GitHub](https://github.com/ezoic/scigo/discussions) or check out our [FAQ](./docs/faq/).
 
 🚀 **Ready, Set, SciGo!**

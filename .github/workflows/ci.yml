@@ -55,9 +55,9 @@ jobs:
       - name: Check goimports formatting
         run: |
           echo "Checking goimports formatting..."
-          goimports -l -d -local github.com/YuminosukeSato/scigo .
-          if [ -n "$(goimports -l -local github.com/YuminosukeSato/scigo .)" ]; then
-            echo "❌ goimports formatting issues found. Run 'goimports -w -local github.com/YuminosukeSato/scigo .' locally"
+          goimports -l -d -local github.com/ezoic/scigo .
+          if [ -n "$(goimports -l -local github.com/ezoic/scigo .)" ]; then
+            echo "❌ goimports formatting issues found. Run 'goimports -w -local github.com/ezoic/scigo .' locally"
             exit 1
           fi
 

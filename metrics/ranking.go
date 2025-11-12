@@ -7,7 +7,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	scigoErrors "github.com/YuminosukeSato/scigo/pkg/errors"
+	scigoErrors "github.com/ezoic/scigo/pkg/errors"
 )
 
 // NDCG calculates the Normalized Discounted Cumulative Gain for ranking evaluation.

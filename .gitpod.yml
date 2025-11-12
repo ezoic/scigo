@@ -43,8 +43,8 @@ tasks:
       echo "  make lint                         # Run linter"
       echo "  docker-compose up scigo-demo     # Docker demo"
       echo ""
-      echo "📖 Documentation: https://pkg.go.dev/github.com/YuminosukeSato/scigo"
-      echo "🐙 Repository: https://github.com/YuminosukeSato/scigo"
+      echo "📖 Documentation: https://pkg.go.dev/github.com/ezoic/scigo"
+      echo "🐙 Repository: https://github.com/ezoic/scigo"
       echo ""
       echo "Ready, Set, SciGo! 🚀"
 

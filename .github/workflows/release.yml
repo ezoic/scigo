@@ -82,19 +82,19 @@ jobs:
         
         ### Go Install (Recommended)
         ```bash
-        go install github.com/YuminosukeSato/scigo@latest
+        go install github.com/ezoic/scigo@latest
         ```
         
         ### Go Module
         ```bash
-        go get github.com/YuminosukeSato/scigo@VERSION
+        go get github.com/ezoic/scigo@VERSION
         ```
         
         ## Documentation
         
-        - [API Documentation](https://pkg.go.dev/github.com/YuminosukeSato/scigo)
-        - [Examples](https://github.com/YuminosukeSato/scigo/tree/main/examples)
-        - [Migration Guide](https://github.com/YuminosukeSato/scigo#-scikit-learn-compatibility)
+        - [API Documentation](https://pkg.go.dev/github.com/ezoic/scigo)
+        - [Examples](https://github.com/ezoic/scigo/tree/main/examples)
+        - [Migration Guide](https://github.com/ezoic/scigo#-scikit-learn-compatibility)
         EOF
         
         # Replace VERSION placeholder
@@ -121,7 +121,7 @@ jobs:
     - name: Update pkg.go.dev
       run: |
         # Trigger pkg.go.dev to update
-        curl "https://proxy.golang.org/github.com/YuminosukeSato/scigo/@v/${{ steps.changelog.outputs.VERSION }}.info"
+        curl "https://proxy.golang.org/github.com/ezoic/scigo/@v/${{ steps.changelog.outputs.VERSION }}.info"
         
     - name: Notify release
       uses: actions/github-script@v7
@@ -136,7 +136,7 @@ jobs:
             repo: context.repo.repo,
             title: `Post-release tasks for ${version}`,
             body: `## Post-release checklist for ${version}\n\n` +
-                  `- [ ] Verify pkg.go.dev updated: https://pkg.go.dev/github.com/YuminosukeSato/scigo\n` +
+                  `- [ ] Verify pkg.go.dev updated: https://pkg.go.dev/github.com/ezoic/scigo\n` +
                   `- [ ] Update documentation if needed\n` +
                   `- [ ] Announce release on social media\n` +
                   `- [ ] Update dependent projects\n` +

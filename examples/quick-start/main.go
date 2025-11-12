@@ -1,5 +1,5 @@
 // Package main demonstrates the quick start example for SciGo
-// This example can be run with: go run github.com/YuminosukeSato/scigo/examples/quick-start@latest
+// This example can be run with: go run github.com/ezoic/scigo/examples/quick-start@latest
 package main
 
 import (
@@ -8,8 +8,8 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/linear"
-	"github.com/YuminosukeSato/scigo/preprocessing"
+	"github.com/ezoic/scigo/linear"
+	"github.com/ezoic/scigo/preprocessing"
 )
 
 func main() {
@@ -88,5 +88,5 @@ func main() {
 	}
 
 	fmt.Println("\n🚀 Ready, Set, SciGo!")
-	fmt.Println("Learn more at: https://pkg.go.dev/github.com/YuminosukeSato/scigo")
+	fmt.Println("Learn more at: https://pkg.go.dev/github.com/ezoic/scigo")
 }

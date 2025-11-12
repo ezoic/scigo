@@ -11,9 +11,9 @@ description: "The blazing-fast scikit-learn compatible ML library for Go"
   <p class="lead mb-4">Say "Goodbye" to slow ML, "Sci-Go" to fast learning!</p>
   
   <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-    <img src="https://github.com/YuminosukeSato/scigo/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
+    <img src="https://github.com/ezoic/scigo/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
     <img src="https://codecov.io/gh/YuminosukeSato/scigo/branch/main/graph/badge.svg" alt="Coverage" />
-    <img src="https://goreportcard.com/badge/github.com/YuminosukeSato/scigo" alt="Go Report Card" />
+    <img src="https://goreportcard.com/badge/github.com/ezoic/scigo" alt="Go Report Card" />
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License" />
     <img src="https://img.shields.io/badge/Go-1.23%2B-blue.svg" alt="Go Version" />
   </div>
@@ -39,7 +39,7 @@ Get started with SciGo in less than 30 seconds:
 ### Installation
 
 ```bash
-go get github.com/YuminosukeSato/scigo
+go get github.com/ezoic/scigo
 ```
 
 ### Your First Model
@@ -48,7 +48,7 @@ go get github.com/YuminosukeSato/scigo
 package main
 
 import (
-    "github.com/YuminosukeSato/scigo/linear"
+    "github.com/ezoic/scigo/linear"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -87,7 +87,7 @@ Load and inference Python LightGBM models directly - full `.txt`/`.json` format 
 {{< blocks/section color="white" >}}
 
 {{% blocks/feature icon="fas fa-book" title="Complete Documentation" %}}
-Comprehensive API documentation with examples on [pkg.go.dev](https://pkg.go.dev/github.com/YuminosukeSato/scigo).
+Comprehensive API documentation with examples on [pkg.go.dev](https://pkg.go.dev/github.com/ezoic/scigo).
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fas fa-stream" title="Real-time ML" %}}

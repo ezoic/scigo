@@ -43,7 +43,7 @@ A pure Go implementation of LightGBM with full Python compatibility.
 ## Installation
 
 ```bash
-go get github.com/YuminosukeSato/scigo/sklearn/lightgbm
+go get github.com/ezoic/scigo/sklearn/lightgbm
 ```
 
 ## Quick Start
@@ -54,7 +54,7 @@ go get github.com/YuminosukeSato/scigo/sklearn/lightgbm
 package main
 
 import (
-    "github.com/YuminosukeSato/scigo/sklearn/lightgbm"
+    "github.com/ezoic/scigo/sklearn/lightgbm"
     "gonum.org/v1/gonum/mat"
 )
 

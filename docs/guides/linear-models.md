@@ -37,8 +37,8 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
-    "github.com/YuminosukeSato/scigo/metrics"
+    "github.com/ezoic/scigo/linear"
+    "github.com/ezoic/scigo/metrics"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -114,8 +114,8 @@ w = (X'X)⁻¹X'y
 package main
 
 import (
-    "github.com/YuminosukeSato/scigo/sklearn/linear_model"
-    "github.com/YuminosukeSato/scigo/preprocessing"
+    "github.com/ezoic/scigo/sklearn/linear_model"
+    "github.com/ezoic/scigo/preprocessing"
 )
 
 func main() {

@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/YuminosukeSato/scigo/pkg/errors"
+	"github.com/ezoic/scigo/pkg/errors"
 )
 
 // SKLearnModelSpec はscikit-learnモデルのメタデータ

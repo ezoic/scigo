@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	scigoErrors "github.com/YuminosukeSato/scigo/pkg/errors"
+	scigoErrors "github.com/ezoic/scigo/pkg/errors"
 )
 
 // TestErrorWrappingCompatibility tests Go 1.13+ error wrapping with our custom types

@@ -7,7 +7,7 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/core/model"
+	"github.com/ezoic/scigo/core/model"
 )
 
 // TreeNode represents a node in the decision tree

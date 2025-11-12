@@ -5,7 +5,7 @@ Complete API documentation for the `preprocessing` package.
 ## Package Overview
 
 ```go
-import "github.com/YuminosukeSato/scigo/preprocessing"
+import "github.com/ezoic/scigo/preprocessing"
 ```
 
 The `preprocessing` package provides data transformation and scaling utilities for machine learning pipelines.
@@ -683,8 +683,8 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/preprocessing"
-    "github.com/YuminosukeSato/scigo/linear"
+    "github.com/ezoic/scigo/preprocessing"
+    "github.com/ezoic/scigo/linear"
     "gonum.org/v1/gonum/mat"
 )
 

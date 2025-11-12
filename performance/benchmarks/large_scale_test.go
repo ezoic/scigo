@@ -9,9 +9,9 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/linear"
-	"github.com/YuminosukeSato/scigo/performance"
-	"github.com/YuminosukeSato/scigo/sklearn/linear_model"
+	"github.com/ezoic/scigo/linear"
+	"github.com/ezoic/scigo/performance"
+	"github.com/ezoic/scigo/sklearn/linear_model"
 )
 
 // BenchmarkTBScale tests performance with TB-scale datasets

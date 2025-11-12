@@ -10,10 +10,10 @@ import (
 
 	"gonum.org/v1/gonum/mat"
 
-	"github.com/YuminosukeSato/scigo/core/model"
-	"github.com/YuminosukeSato/scigo/sklearn/cluster"
-	"github.com/YuminosukeSato/scigo/sklearn/drift"
-	"github.com/YuminosukeSato/scigo/sklearn/linear_model"
+	"github.com/ezoic/scigo/core/model"
+	"github.com/ezoic/scigo/sklearn/cluster"
+	"github.com/ezoic/scigo/sklearn/drift"
+	"github.com/ezoic/scigo/sklearn/linear_model"
 )
 
 // BenchmarkResult はベンチマーク結果

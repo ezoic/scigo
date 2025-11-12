@@ -3,7 +3,7 @@ package model_test
 import (
 	"fmt"
 
-	"github.com/YuminosukeSato/scigo/core/model"
+	"github.com/ezoic/scigo/core/model"
 )
 
 // ExampleBaseEstimator demonstrates BaseEstimator state management

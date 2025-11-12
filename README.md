@@ -8,13 +8,13 @@
   
   Say "Goodbye" to slow ML, "Sci-Go" to fast learning!
   
-  [![CI](https://github.com/YuminosukeSato/scigo/actions/workflows/ci.yml/badge.svg)](https://github.com/YuminosukeSato/scigo/actions/workflows/ci.yml)
+  [![CI](https://github.com/ezoic/scigo/actions/workflows/ci.yml/badge.svg)](https://github.com/ezoic/scigo/actions/workflows/ci.yml)
   [![Codecov](https://codecov.io/gh/YuminosukeSato/scigo/branch/main/graph/badge.svg)](https://codecov.io/gh/YuminosukeSato/scigo)
-  [![Go Report Card](https://goreportcard.com/badge/github.com/YuminosukeSato/scigo)](https://goreportcard.com/report/github.com/YuminosukeSato/scigo)
+  [![Go Report Card](https://goreportcard.com/badge/github.com/ezoic/scigo)](https://goreportcard.com/report/github.com/ezoic/scigo)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Go Version](https://img.shields.io/badge/Go-1.23%2B-blue.svg)](https://go.dev/)
-  [![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo)](https://pkg.go.dev/github.com/YuminosukeSato/scigo)
-  [![Release](https://img.shields.io/github/v/release/YuminosukeSato/scigo)](https://github.com/YuminosukeSato/scigo/releases)
+  [![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo)](https://pkg.go.dev/github.com/ezoic/scigo)
+  [![Release](https://img.shields.io/github/v/release/YuminosukeSato/scigo)](https://github.com/ezoic/scigo/releases)
 </div>
 
 ---
@@ -28,7 +28,7 @@ SciGo brings the power and familiarity of scikit-learn to the Go ecosystem, offe
 - 🔥 **Blazing Fast**: Native Go implementation with built-in parallelization
 - 🎯 **scikit-learn Compatible**: Familiar Fit/Predict API for easy migration
 - 🌲 **LightGBM Support**: Full compatibility with Python LightGBM models (.txt/JSON/string)
-- 📖 **Well Documented**: Complete API documentation with examples on [pkg.go.dev](https://pkg.go.dev/github.com/YuminosukeSato/scigo)
+- 📖 **Well Documented**: Complete API documentation with examples on [pkg.go.dev](https://pkg.go.dev/github.com/ezoic/scigo)
 - 🌊 **Streaming Support**: Online learning algorithms for real-time data
 - 🚀 **Zero Heavy Dependencies**: Pure Go implementation (only scientific essentials)
 - 📊 **Comprehensive**: Regression, classification, clustering, tree-based models, and more
@@ -39,24 +39,24 @@ SciGo brings the power and familiarity of scikit-learn to the Go ecosystem, offe
 
 ### Go Module (Recommended)
 ```bash
-go get github.com/YuminosukeSato/scigo@latest
+go get github.com/ezoic/scigo@latest
 ```
 
 ### Quick Start Options
 - **🐳 Docker**: `docker run --rm -it ghcr.io/yuminosukesato/scigo:latest`
-- **☁️ GitPod**: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/YuminosukeSato/scigo)
-- **📦 Go Install**: `go install github.com/YuminosukeSato/scigo/examples/quick-start@latest`
+- **☁️ GitPod**: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ezoic/scigo)
+- **📦 Go Install**: `go install github.com/ezoic/scigo/examples/quick-start@latest`
 
 ## 🚀 Quick Start
 
-> 💡 **Tip**: For complete API documentation with examples, visit [pkg.go.dev/scigo](https://pkg.go.dev/github.com/YuminosukeSato/scigo)
+> 💡 **Tip**: For complete API documentation with examples, visit [pkg.go.dev/scigo](https://pkg.go.dev/github.com/ezoic/scigo)
 
 ### Option 1: One-Liner with LightGBM 🌲
 ```go
 package main
 
 import (
-    "github.com/YuminosukeSato/scigo/sklearn/lightgbm"
+    "github.com/ezoic/scigo/sklearn/lightgbm"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -87,7 +87,7 @@ import (
     "fmt"
     "log"
     
-    "github.com/YuminosukeSato/scigo/linear"
+    "github.com/ezoic/scigo/linear"
     "gonum.org/v1/gonum/mat"
 )
 
@@ -124,18 +124,18 @@ func main() {
 
 ## 📚 API Documentation
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo)](https://pkg.go.dev/github.com/YuminosukeSato/scigo)
+[![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo)](https://pkg.go.dev/github.com/ezoic/scigo)
 
 ### 📖 Package Documentation
 
 | Package | Description | Go Doc |
 |---------|-------------|--------|
-| **sklearn/lightgbm** 🌲 | LightGBM with Python model compatibility & convenience features | [![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo/sklearn/lightgbm)](https://pkg.go.dev/github.com/YuminosukeSato/scigo/sklearn/lightgbm) |
-| **sklearn/linear_model** | Linear models with full scikit-learn compatibility | [![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo/sklearn/linear_model)](https://pkg.go.dev/github.com/YuminosukeSato/scigo/sklearn/linear_model) |
-| **preprocessing** | Data preprocessing utilities (StandardScaler, MinMaxScaler, OneHotEncoder) | [![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo/preprocessing)](https://pkg.go.dev/github.com/YuminosukeSato/scigo/preprocessing) |
-| **linear** | Linear machine learning algorithms (LinearRegression) | [![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo/linear)](https://pkg.go.dev/github.com/YuminosukeSato/scigo/linear) |
-| **metrics** | Model evaluation metrics (MSE, RMSE, MAE, R², MAPE) | [![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo/metrics)](https://pkg.go.dev/github.com/YuminosukeSato/scigo/metrics) |
-| **core/model** | Base model with weight export/import and scikit-learn compatibility | [![GoDoc](https://pkg.go.dev/badge/github.com/YuminosukeSato/scigo/core/model)](https://pkg.go.dev/github.com/YuminosukeSato/scigo/core/model) |
+| **sklearn/lightgbm** 🌲 | LightGBM with Python model compatibility & convenience features | [![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo/sklearn/lightgbm)](https://pkg.go.dev/github.com/ezoic/scigo/sklearn/lightgbm) |
+| **sklearn/linear_model** | Linear models with full scikit-learn compatibility | [![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo/sklearn/linear_model)](https://pkg.go.dev/github.com/ezoic/scigo/sklearn/linear_model) |
+| **preprocessing** | Data preprocessing utilities (StandardScaler, MinMaxScaler, OneHotEncoder) | [![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo/preprocessing)](https://pkg.go.dev/github.com/ezoic/scigo/preprocessing) |
+| **linear** | Linear machine learning algorithms (LinearRegression) | [![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo/linear)](https://pkg.go.dev/github.com/ezoic/scigo/linear) |
+| **metrics** | Model evaluation metrics (MSE, RMSE, MAE, R², MAPE) | [![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo/metrics)](https://pkg.go.dev/github.com/ezoic/scigo/metrics) |
+| **core/model** | Base model with weight export/import and scikit-learn compatibility | [![GoDoc](https://pkg.go.dev/badge/github.com/ezoic/scigo/core/model)](https://pkg.go.dev/github.com/ezoic/scigo/core/model) |
 
 ### 📋 Complete API Examples
 
@@ -143,14 +143,14 @@ The documentation includes comprehensive examples for all major APIs. Visit the 
 
 ```bash
 # View package documentation
-go doc github.com/YuminosukeSato/scigo/preprocessing
-go doc github.com/YuminosukeSato/scigo/linear
-go doc github.com/YuminosukeSato/scigo/metrics
+go doc github.com/ezoic/scigo/preprocessing
+go doc github.com/ezoic/scigo/linear
+go doc github.com/ezoic/scigo/metrics
 
 # View specific function documentation
-go doc github.com/YuminosukeSato/scigo/preprocessing.StandardScaler.Fit
-go doc github.com/YuminosukeSato/scigo/linear.LinearRegression.Predict
-go doc github.com/YuminosukeSato/scigo/metrics.MSE
+go doc github.com/ezoic/scigo/preprocessing.StandardScaler.Fit
+go doc github.com/ezoic/scigo/linear.LinearRegression.Predict
+go doc github.com/ezoic/scigo/metrics.MSE
 
 # Run example tests
 go test -v ./preprocessing -run Example
@@ -271,12 +271,12 @@ scigo/
 Comprehensive evaluation metrics with full documentation:
 
 - **Regression Metrics**: 
-  - MSE (Mean Squared Error) - [`pkg.go.dev/metrics.MSE`](https://pkg.go.dev/github.com/YuminosukeSato/scigo/metrics#MSE)
-  - RMSE (Root Mean Squared Error) - [`pkg.go.dev/metrics.RMSE`](https://pkg.go.dev/github.com/YuminosukeSato/scigo/metrics#RMSE)  
-  - MAE (Mean Absolute Error) - [`pkg.go.dev/metrics.MAE`](https://pkg.go.dev/github.com/YuminosukeSato/scigo/metrics#MAE)
-  - R² (Coefficient of Determination) - [`pkg.go.dev/metrics.R2Score`](https://pkg.go.dev/github.com/YuminosukeSato/scigo/metrics#R2Score)
-  - MAPE (Mean Absolute Percentage Error) - [`pkg.go.dev/metrics.MAPE`](https://pkg.go.dev/github.com/YuminosukeSato/scigo/metrics#MAPE)
-  - Explained Variance Score - [`pkg.go.dev/metrics.ExplainedVarianceScore`](https://pkg.go.dev/github.com/YuminosukeSato/scigo/metrics#ExplainedVarianceScore)
+  - MSE (Mean Squared Error) - [`pkg.go.dev/metrics.MSE`](https://pkg.go.dev/github.com/ezoic/scigo/metrics#MSE)
+  - RMSE (Root Mean Squared Error) - [`pkg.go.dev/metrics.RMSE`](https://pkg.go.dev/github.com/ezoic/scigo/metrics#RMSE)  
+  - MAE (Mean Absolute Error) - [`pkg.go.dev/metrics.MAE`](https://pkg.go.dev/github.com/ezoic/scigo/metrics#MAE)
+  - R² (Coefficient of Determination) - [`pkg.go.dev/metrics.R2Score`](https://pkg.go.dev/github.com/ezoic/scigo/metrics#R2Score)
+  - MAPE (Mean Absolute Percentage Error) - [`pkg.go.dev/metrics.MAPE`](https://pkg.go.dev/github.com/ezoic/scigo/metrics#MAPE)
+  - Explained Variance Score - [`pkg.go.dev/metrics.ExplainedVarianceScore`](https://pkg.go.dev/github.com/ezoic/scigo/metrics#ExplainedVarianceScore)
 - **Classification**: Accuracy, Precision, Recall, F1-Score, ROC-AUC (coming)
 - **Clustering**: Silhouette Score, Davies-Bouldin Index (coming)
 
@@ -325,7 +325,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md).
 
 ```bash
 # Clone the repository
-git clone https://github.com/YuminosukeSato/scigo.git
+git clone https://github.com/ezoic/scigo.git
 cd scigo
 
 # Install dependencies
@@ -393,17 +393,17 @@ This will trigger the release workflow via the existing `release.yml` workflow.
 ## 📖 Documentation
 
 ### Core Documentation
-- **[API Documentation](https://pkg.go.dev/github.com/YuminosukeSato/scigo)** - Complete API reference with examples
-- **[Package Index](https://pkg.go.dev/github.com/YuminosukeSato/scigo?tab=subdirectories)** - Browse all packages
+- **[API Documentation](https://pkg.go.dev/github.com/ezoic/scigo)** - Complete API reference with examples
+- **[Package Index](https://pkg.go.dev/github.com/ezoic/scigo?tab=subdirectories)** - Browse all packages
 
 ### API Quick Reference
 | API | Package | Documentation |
 |-----|---------|---------------|
-| `StandardScaler` | preprocessing | [pkg.go.dev/preprocessing.StandardScaler](https://pkg.go.dev/github.com/YuminosukeSato/scigo/preprocessing#StandardScaler) |
-| `MinMaxScaler` | preprocessing | [pkg.go.dev/preprocessing.MinMaxScaler](https://pkg.go.dev/github.com/YuminosukeSato/scigo/preprocessing#MinMaxScaler) |
-| `OneHotEncoder` | preprocessing | [pkg.go.dev/preprocessing.OneHotEncoder](https://pkg.go.dev/github.com/YuminosukeSato/scigo/preprocessing#OneHotEncoder) |
-| `LinearRegression` | linear | [pkg.go.dev/linear.LinearRegression](https://pkg.go.dev/github.com/YuminosukeSato/scigo/linear#LinearRegression) |
-| `BaseEstimator` | core/model | [pkg.go.dev/model.BaseEstimator](https://pkg.go.dev/github.com/YuminosukeSato/scigo/core/model#BaseEstimator) |
+| `StandardScaler` | preprocessing | [pkg.go.dev/preprocessing.StandardScaler](https://pkg.go.dev/github.com/ezoic/scigo/preprocessing#StandardScaler) |
+| `MinMaxScaler` | preprocessing | [pkg.go.dev/preprocessing.MinMaxScaler](https://pkg.go.dev/github.com/ezoic/scigo/preprocessing#MinMaxScaler) |
+| `OneHotEncoder` | preprocessing | [pkg.go.dev/preprocessing.OneHotEncoder](https://pkg.go.dev/github.com/ezoic/scigo/preprocessing#OneHotEncoder) |
+| `LinearRegression` | linear | [pkg.go.dev/linear.LinearRegression](https://pkg.go.dev/github.com/ezoic/scigo/linear#LinearRegression) |
+| `BaseEstimator` | core/model | [pkg.go.dev/model.BaseEstimator](https://pkg.go.dev/github.com/ezoic/scigo/core/model#BaseEstimator) |
 
 ### Migration & Advanced Guides
 - **[📚 scikit-learn Migration Guide](docs/sklearn-migration-guide.md)** - Complete guide for Python developers
@@ -425,8 +425,8 @@ SciGo is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 - **Author**: Yuminosuke Sato
 - **GitHub**: [@YuminosukeSato](https://github.com/YuminosukeSato)
-- **Repository**: [https://github.com/YuminosukeSato/scigo](https://github.com/YuminosukeSato/scigo)
-- **Issues**: [GitHub Issues](https://github.com/YuminosukeSato/scigo/issues)
+- **Repository**: [https://github.com/ezoic/scigo](https://github.com/ezoic/scigo)
+- **Issues**: [GitHub Issues](https://github.com/ezoic/scigo/issues)
 
 ---
 
